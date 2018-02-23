@@ -3,9 +3,115 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Lim</title>
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<script src="https://cdn.jsdelivr.net/npm/vue@2.5.13/dist/vue.js"></script>
 </head>
 <body>
-	<p><a href="music-app/index.html">Music-App</a></p>
-	<p><a href="auto-web/index.html">Auto-Web</a></p>
+	<div id="app">
+		<header class="header wrapper">
+			<ul class="nav clearfix">
+				<li class="item"><a href="#">HOME</a></li>
+				<li class="item"><a href="#">BLOG</a></li>
+				<li class="item"><a href="#">STORE</a></li>
+				<li class="item"><a href="#project">PROJECTS</a></li>
+				<li class="item"><a href="#contact">CONTACT</a></li>
+			</ul>
+		</header>
+		<section class="content">
+			<div class="img-wrapper">
+				<img class="img" src="img/img.jpg" alt="首页大图">
+				<h1 class="title">越努力，越幸运</h1>
+			</div>
+			<div class="project wrapper" id="project">
+				<h3 class="title">PROJECTS</h3>
+				<hr class="hr">
+				<ul class="project-wrapper">
+					<li class="project-item clearfix">
+						<div class="left">
+							<div class="content">
+								<h4 class="title">响应式网页</h4>
+							<p class="text">利用媒体查询，使网页根据显示宽度的不同而自动调整布局、间距、字体大小。</p>
+							</div>
+						</div>
+						<div class="right">
+							<a class="pre3d" href="auto-web/index.html" target="_blank">
+								<img id="img" @mousemove.stop="move" @mouseenter.stop="enter" @mouseleave.stop="leave" ref="img" src="img/1.jpg">
+							</a>
+						</div>
+					</li>
+					<li class="project-item clearfix">
+						<div class="right">
+							<a class="pre3d" href="music-app/index.html" target="_blank">
+								<img @mousemove.stop="move" @mouseenter.stop="enter" @mouseleave.stop="leave" ref="img" src="img/2.jpg">
+							</a>
+						</div>
+						<div class="left">
+							<div class="content">
+								<h4 class="title">单页应用，仿音乐App</h4>
+							<p class="text">通过vue-cli搭建开发环境，使用了vue、vue-router、vuex、axios、better-scroll等第三方组件，充分利用模块、组件化的思维开发。项目开发了13个基础组件、15个业务组件。所有数据都是线上真实数据，其中热门歌单及歌词部分由于没有后端伪造请求，无法获取数据（在开发过程中利用node起临时服务器可以获取），建议使用手机浏览。</p>
+							<div class="qr">
+								<img src="img/qr.png">
+							</div>
+							</div>
+						</div>
+					</li>
+					<li class="project-item clearfix">
+						<div class="left">
+							<div class="content">
+								<h4 class="title">传统网页</h4>
+							<p class="text">网易前端微专业大作业项目，使用网易提供的接口利用ajax获取课程数据信息。</p>
+							</div>
+						</div>
+						<div class="right">
+							<a class="pre3d" href="wyedu/index.html" target="_blank">
+								<img @mousemove.stop="move" @mouseenter.stop="enter" @mouseleave.stop="leave" ref="img" src="img/3.jpg">
+							</a>
+						</div>
+					</li>
+					<li class="project-item clearfix">
+						<div class="right">
+							<a class="pre3d" href="projectInf/index.html" target="_blank">
+								<img @mousemove.stop="move" @mouseenter.stop="enter" @mouseleave.stop="leave" ref="img" src="img/4.jpg">
+							</a>
+						</div>
+						<div class="left">
+							<div class="content">
+								<h4 class="title">Todo List</h4>
+							<p class="text">主要使用localstorage把数据存储在本地。</p>
+							</div>
+						</div>
+					</li>
+					<li class="project-item clearfix">
+						<div class="left">
+							<div class="content">
+								<h4 class="title">仿win10桌面</h4>
+							<p class="text">超级简易仿win10桌面，只是个壳子。。。</p>
+							</div>
+						</div>
+						<div class="right">
+							<a class="pre3d" href="desk/index.html" target="_blank">
+								<img @mousemove.stop="move" @mouseenter.stop="enter" @mouseleave.stop="leave" ref="img" src="img/5.jpg">
+							</a>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</section>
+		<footer class="footer">
+			<div class="wrapper">
+				<h3 class="title" id="contact">CONTACT</h3>
+				<hr class="hr">
+				<ul class="contact">
+					<li>TEL：15051556532</li>
+					<li>E-MAIL:15051556532@163.com</li>
+					<li>QQ:904593351</li>
+					<li><img src="img/wechat.png"></li>
+				</ul>
+			</div>
+		</footer>
+	</div>
+
+	<script src="js/main.js"></script>
 </body>
 </html>

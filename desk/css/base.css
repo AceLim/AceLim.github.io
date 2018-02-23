@@ -1,0 +1,328 @@
+html {height: 100%;}
+body {height:100%;background: url(../img/deskbg.jpg) no-repeat;background-size: cover;overflow: hidden;}
+
+.marsk {
+	display: none;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.contan {height: 100%;padding-bottom: 40px;box-sizing: border-box;}
+
+.icon {position: relative;margin: 8px 5px;}
+
+.icon li{
+	position: absolute;
+	width: 74px;
+	margin: 0 20px 20px 0px;
+	border-radius: 3px;
+}
+
+.icon li:hover{
+	background: rgba(200,40,30,.3);
+}
+
+.icon li img{
+	width: 40px;
+	height: 40px;
+	margin-left: 17px;
+}
+
+.icon li p{
+	text-align: center;
+	font: 14px/20px "微软雅黑";
+	color: #fff;
+}
+
+.bottom-bar {
+	position: absolute;
+	left: 0px;
+	bottom: 0px;
+	width: 100%;
+	height: 40px;
+	background: rgba(0,0,0,.8);
+}
+
+.bottom-bar .w-start {
+	width: 40px;
+	height: 40px;
+	background: url(../img/w-logo.png) no-repeat -30px;
+}
+
+.bottom-bar .w-start:hover {background-color: rgba(255,255,255,.1);background-position: 0px;}
+
+.bottom-bar .w-search{
+	width: 310px;
+	height: 40px;
+	border: none;
+	padding-left: 40px;
+	background: url(../img/w-search1.png) no-repeat;
+	background-color: rgba(255,255,255,.3);
+}
+
+.bottom-bar .w-search:focus{
+	background: url(../img/w-search2.png) no-repeat;
+	background-color: rgb(255,255,255);
+}
+
+.bottom-bar .w-view{
+	width: 40px;
+	height: 40px;
+	background: url(../img/w-view1.png) no-repeat;
+}
+.bottom-bar .w-view:hover{
+	background: url(../img/w-view2.png) no-repeat;
+	background-color: rgba(255,255,255,.1);
+}
+
+
+.bottom-bar .message{
+	width: 40px;
+	height: 40px;
+	background: url(../img/message.png) no-repeat center;
+	background-size: 20px 20px;
+}
+.bottom-bar .message:hover{
+	background-color: rgba(255,255,255,.1);
+}
+
+.bottom-bar .timer{
+	height: 40px;
+	padding: 0 10px;
+	cursor: default;
+}
+.bottom-bar .timer:hover{
+	background-color: rgba(255,255,255,.1);
+}
+.bottom-bar .timer>p{
+	color: #FFF;
+	height: 20px;
+	font: 10px/20px "微软雅黑";
+	text-align: center;
+}
+
+.bottom-bar .langue{
+	width: 40px;
+	height: 40px;
+	background: url(../img/english.png) no-repeat center;
+	background-size: 20px 20px;
+}
+.bottom-bar .langue:hover{
+	background-color: rgba(255,255,255,.1);
+}
+
+.bottom-bar .voice{
+	width: 40px;
+	height: 40px;
+	background: url(../img/sound.png) no-repeat center;
+	background-size: 20px 20px;
+}
+.bottom-bar .voice:hover{
+	background-color: rgba(255,255,255,.1);
+}
+
+.bottom-bar .internet{
+	width: 40px;
+	height: 40px;
+	background: url(../img/computer.png) no-repeat center;
+	background-size: 20px 20px;
+}
+.bottom-bar .internet:hover{
+	background-color: rgba(255,255,255,.1);
+}
+
+.bottom-bar .hide-icon{
+	width: 40px;
+	height: 40px;
+	background: url(../img/topj.png) no-repeat center;
+	background-size: 20px 20px;
+}
+.bottom-bar .hide-icon:hover{
+	background-color: rgba(255,255,255,.1);
+}
+
+.contan .start-menu,.contan .date-menu{
+	position: absolute;
+	bottom: 40px;
+	background-color: rgba(0,0,0,.6);
+	display: none;
+}
+
+.contan .start-menu{
+	left: 0px;
+	width: 960px;
+	height: 640px;
+	box-shadow: 2px 0px 10px #000;
+	display: none;
+}
+
+.start-menu>div{
+	height: 100%;
+	box-sizing: border-box;
+	padding: 8px 8px;
+}
+.start-menu .button-group{
+	position: relative;
+	width: 40px;
+	padding: 8px 0px;
+}
+
+.button-group .menu{
+	width: 40px;
+	height: 40px;
+	background: url(../img/menu.png) no-repeat center;
+	background-size: 20px 20px;
+}
+
+.button-group .menu:hover{
+	background-color: rgba(255,255,255,.1);
+}
+
+.button-group .bottom{
+	position: absolute;
+	width: 40px;
+	bottom: 0px;
+}
+
+.bottom .user{width: 40px;height: 40px;background: url(../img/user.png) no-repeat center;background-size: 20px 20px;}
+.bottom .user:hover{background-color: rgba(255,255,255,.1);}
+.bottom .setting{width: 40px;height: 40px;background: url(../img/set.png) no-repeat center;background-size: 20px 20px;}
+.bottom .setting:hover{background-color: rgba(255,255,255,.1);}
+.bottom .shutdown{width: 40px;height: 40px;background: url(../img/shutdown.png) no-repeat center;background-size: 20px 20px;}
+.bottom .shutdown:hover{background-color: rgba(255,255,255,.1);}
+
+
+.start-menu .app-list{
+	width: 260px;
+	overflow: hidden;
+}
+.start-menu .app-list:hover{
+	overflow-y: scroll;
+}
+
+.start-menu p{font: 14px/40px "微软雅黑";color: #fff;padding-left: 15px;}
+.app-list p:hover{background-color: rgba(255,255,255,.1);}
+
+.app-list li{
+	height: 40px;
+	box-sizing: border-box;
+	padding-left: 60px;
+	margin: 6px 0;
+	background: url(../img/PS.png) no-repeat;
+	background-position: left 15px center;
+	font: 14px/40px "微软雅黑";
+	color: #ddd;
+}
+.app-list li:hover{
+	background-color: rgba(255,255,255,.1);
+}
+
+.start-menu .live-active{
+	width: 320px;
+}
+
+.live-active P,.play-visite p{
+	padding-left: 0px;
+}
+
+.live-active img,.play-visite img{width: 72px;height:72px;box-sizing: border-box;}
+
+.live-active img:hover,.play-visite img:hover{
+	box-shadow:inset 2px 2px 1px 1px #fff;
+}
+
+.start-menu .play-visite{
+	width: 340px;
+}
+
+
+.contan .date-menu{
+	right: 0px;
+	width: 360px;
+	height: 736px;
+	box-shadow: -2px 0px 10px #000;
+}
+
+.shijian{
+	width:100%;
+	height: 112px;
+	border-bottom: 1px solid #999;
+	padding:20px 0 0 23px;
+	box-sizing: border-box;
+	cursor: default;
+}
+
+.shijian .sj{
+	font: 40px/60px "arial narrow";
+	color: #fff;
+}
+
+.shijian .rq{
+	font: 15px/20px "微软雅黑";
+	color: lightskyblue;
+}
+.shijian .rq:hover{color: #aaa;}
+
+.tb-head,.tb-body{
+	width: 314px;
+	margin-left: 23px;
+	margin-right: 23px;
+	box-sizing: border-box;
+}
+
+
+.tb-head,.tb-body{
+	margin-top: 10px;
+	color: #fff;
+	cursor: default;
+}
+
+.tb-body{margin-bottom: 25px;}
+.data-box th,.data-box td{
+	width: 40px;
+	height: 40px;
+	vertical-align:middle;
+	text-align: center;
+}
+
+.tb-body td:hover,.tb-body th:hover{
+	box-shadow: 0px 0px 0px 3px lightgreen inset;
+}
+
+.data-plan{
+	width: 100%;
+	padding-left: 23px;
+	padding-right: 23px;
+	padding-top: 10px;
+	box-sizing: border-box;
+	border-top: 1px solid #eee;
+}
+.data-plan p{
+	color: #fff;
+	font: 15px/30px "微软雅黑";
+}
+
+.setplan{
+	padding-left: 40px;
+	background: url(../img/date.png) no-repeat left;
+	background-size: 25px 25px;
+}
+
+.data-plan button{
+	margin: 20px 0px 0px 50px;
+	width: 217px;
+	height: 33px;
+	background-color: #2AB8CC;
+	border: none;
+}
+
+
+.fl {
+	float: left;
+}
+
+.fr {
+	float: right;
+}
