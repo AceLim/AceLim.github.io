@@ -18,7 +18,7 @@ new Vue({
 	},
 	methods: {
 		enter(e) {
-			this.currentImg = e.target
+			this.currentImg = e.target.firstElementChild
 		},
 		leave() {
 			this.xDeg = 0

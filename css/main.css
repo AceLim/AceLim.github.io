@@ -27,9 +27,13 @@
 	top: 70%;
 	left: 50%;
 	transform: translate(-50%,-50%);
+	transform: -webkit-translate(-50%,-50%);
+	transform: -o-translate(-50%,-50%);
+	transform: -ms-translate(-50%,-50%);
+	transform: -moz-translate(-50%,-50%);
 	margin: 0 auto;
 	font-size: 55px;
-	letter-spacing: 45px;
+	letter-spacing: 40px;
 	color: #eee;
 	z-index: 9;
 	opacity: 0;
@@ -80,6 +84,10 @@
 	position: relative;
 	top: 50%;
 	transform: translateY(-50%);
+	transform: -webkit-translateY(-50%);
+	transform: -o-translateY(-50%);
+	transform: -ms-translateY(-50%);
+	transform: -moz-translateY(-50%);
 }
 
 .project-item .pre3d {
