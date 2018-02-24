@@ -1,11 +1,11 @@
 //获取图片的宽高
-const WIDTH = parseInt(getComputedStyle(document.getElementById("img"),null).width);
-const HEIGHT = parseInt(getComputedStyle(document.getElementById("img"),null).height);
+var WIDTH = parseInt(getComputedStyle(document.getElementById("img"),null).width);
+var HEIGHT = parseInt(getComputedStyle(document.getElementById("img"),null).height);
 //取得图片中心点的坐标
-const orginW = WIDTH/2;
-const orginH = HEIGHT/2;
+var orginW = WIDTH/2;
+var orginH = HEIGHT/2;
 
-const DEG = 10;
+var DEG = 10;
 
 new Vue({
 	el: "#app",
@@ -31,8 +31,8 @@ new Vue({
 				return
 			}
 			// 取得鼠标x、y坐标，并进行边界处理
-			let offsetX = e.offsetX
-			let offsetY = e.offsetY
+			var offsetX = e.offsetX
+			var offsetY = e.offsetY
 			if(offsetX < 0) {
 				offsetX = 0
 			}else if(offsetX > WIDTH) {
