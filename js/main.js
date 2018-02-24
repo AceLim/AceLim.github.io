@@ -47,9 +47,7 @@ new Vue({
 			this.xDeg = (offsetX-orginW)/orginW*DEG
 			this.yDeg = -(offsetY-orginH)/orginH*DEG
 
-			// this.currentImg.style.transform = "rotate("+this.xDeg+"deg,"+this.yDeg+"deg)"
 			this.currentImg.style.transform = "rotateX("+this.yDeg+"deg) rotateY("+this.xDeg+"deg)"
-			console.log(this.currentImg.style.transform)
 		}
 	}
 })
