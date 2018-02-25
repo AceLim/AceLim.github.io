@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1,user-scalable=no" />
 	<title>Lim</title>
 	<link rel="stylesheet" type="text/css" href="css/reset.css">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
@@ -29,69 +30,69 @@
 				<ul class="project-wrapper">
 					<li class="project-item clearfix">
 						<div class="left">
-							<div class="content">
+							<a class="content" href="auto-web/index.html" target="_blank">
 								<h4 class="title">响应式网页</h4>
-							<p class="text">利用媒体查询，使网页根据显示宽度的不同而自动调整布局、间距、字体大小。</p>
-							</div>
+								<p class="text">利用媒体查询，使网页根据显示宽度的不同而自动调整布局、间距、字体大小。</p>
+							</a>
 						</div>
 						<div class="right">
 							<a class="pre3d" href="auto-web/index.html" target="_blank" @mousemove.stop="move" @mouseenter.stop="enter" @mouseleave.stop="leave">
-								<img id="img" ref="img" src="img/1.jpg">
+								<img id="img" class="img" src="img/1.jpg">
 							</a>
 						</div>
 					</li>
 					<li class="project-item clearfix">
 						<div class="right">
 							<a class="pre3d" href="music-app/index.html" target="_blank" @mousemove.stop="move" @mouseenter.stop="enter" @mouseleave.stop="leave">
-								<img ref="img" src="img/2.jpg">
+								<img class="img" src="img/2.jpg">
 							</a>
 						</div>
 						<div class="left">
-							<div class="content">
+							<a class="content" href="music-app/index.html" target="_blank">
 								<h4 class="title">单页应用，仿音乐App</h4>
-							<p class="text">通过vue-cli搭建开发环境，使用了vue、vue-router、vuex、axios、better-scroll等第三方组件，充分利用模块、组件化的思维开发。项目开发了13个基础组件、15个业务组件。所有数据都是线上真实数据，其中热门歌单及歌词部分由于没有后端伪造请求，无法获取数据（在开发过程中利用node起临时服务器可以获取），建议使用手机浏览。</p>
-							<div class="qr">
-								<img src="img/qr.png">
-							</div>
-							</div>
+								<p class="text">通过vue-cli搭建开发环境，使用了vue、vue-router、vuex、axios、better-scroll等第三方组件，充分利用模块、组件化的思维开发。项目开发了13个基础组件、15个业务组件。所有数据都是线上真实数据，其中热门歌单及歌词部分由于没有后端伪造请求，无法获取数据（在开发过程中利用node起临时服务器可以获取），建议使用手机浏览。</p>
+								<div class="qr">
+									<img class="qr-img" src="img/qr.png">
+								</div>
+							</a>
 						</div>
 					</li>
 					<li class="project-item clearfix">
 						<div class="left">
-							<div class="content">
+							<a class="content" href="wyedu/index.html" target="_blank">
 								<h4 class="title">传统网页</h4>
-							<p class="text">网易前端微专业大作业项目，使用网易提供的接口利用ajax获取课程数据信息。</p>
-							</div>
+								<p class="text">网易前端微专业大作业项目，使用网易提供的接口利用ajax获取课程数据信息。</p>
+							</a>
 						</div>
 						<div class="right">
 							<a class="pre3d" href="wyedu/index.html" target="_blank" @mousemove.stop="move" @mouseenter.stop="enter" @mouseleave.stop="leave">
-								<img ref="img" src="img/3.jpg">
+								<img class="img" src="img/3.jpg">
 							</a>
 						</div>
 					</li>
 					<li class="project-item clearfix">
 						<div class="right">
 							<a class="pre3d" href="projectInf/index.html" target="_blank" @mousemove.stop="move" @mouseenter.stop="enter" @mouseleave.stop="leave">
-								<img ref="img" src="img/4.jpg">
+								<img class="img" src="img/4.jpg">
 							</a>
 						</div>
 						<div class="left">
-							<div class="content">
+							<a class="content" href="projectInf/index.html" target="_blank">
 								<h4 class="title">Todo List</h4>
-							<p class="text">主要使用localstorage把数据存储在本地。</p>
-							</div>
+								<p class="text">主要使用localstorage把数据存储在本地。</p>
+							</a>
 						</div>
 					</li>
 					<li class="project-item clearfix">
 						<div class="left">
-							<div class="content">
+							<a class="content" href="desk/index.html" target="_blank">
 								<h4 class="title">仿win10桌面</h4>
-							<p class="text">超级简易仿win10桌面，只是个壳子。。。</p>
-							</div>
+								<p class="text">超级简易仿win10桌面，只是个壳子。。。</p>
+							</a>
 						</div>
 						<div class="right">
 							<a class="pre3d" href="desk/index.html" target="_blank" @mousemove.stop="move" @mouseenter.stop="enter" @mouseleave.stop="leave">
-								<img ref="img" src="img/5.jpg">
+								<img class="img" src="img/5.jpg">
 							</a>
 						</div>
 					</li>
@@ -103,10 +104,12 @@
 				<h3 class="title" id="contact">CONTACT</h3>
 				<hr class="hr">
 				<ul class="contact">
-					<li>TEL：15051556532</li>
-					<li>E-MAIL:15051556532@163.com</li>
+					<li>TEL:<a href="tel">15051556532</a></li>
+					<li><a href="mailto:15051556532@163.com">MAIL:15051556532@163.com</a></li>
 					<li>QQ:904593351</li>
-					<li><img src="img/wx.png"></li>
+					<li>
+						<img src="img/wx.png">
+					</li>
 				</ul>
 			</div>
 		</footer>
