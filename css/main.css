@@ -53,6 +53,7 @@
 .img-wrapper .img {
 	width: 100%;
 	filter: grayscale(80%);
+	-webkit-filter: grayscale(80%);
 	transition: all 0.4s;
 	-webkit-transition: all 0.4s;
 	-o-transition: all 0.4s;
@@ -62,6 +63,7 @@
 
 .img-wrapper .img:hover {
 	filter: grayscale(0);
+	-webkit-filter: grayscale(0);
 }
 
 .project .title,
@@ -88,6 +90,7 @@
 .project-item .right {
 	flex: 1;
 	padding: 0 10px;
+	height: 400px;
 }
 
 .project-item .left .content {
@@ -189,6 +192,10 @@
 		width: 400px;
 		height: 300px;
 	}
+	.project-item .left,
+	.project-item .right {
+		height: 300px;
+	}
 	.project-item .qr-img {
 		width: 100px;
 		height: 100px;
@@ -218,6 +225,10 @@
 	}
 	.project-item .img {
 		width: 280px;
+		height: 220px;
+	}
+	.project-item .left,
+	.project-item .right {
 		height: 220px;
 	}
 	.project-item .qr-img {
@@ -265,6 +276,17 @@
 	}
 	.project-item .right {
 		display: none;
+	}
+	.project-item .left {
+		height: auto;
+	}
+	.project-item .left .content {
+		top: 0;
+		transform: translate(0);
+		-webkit-transform: translate(0);
+		-o-transform: translate(0);
+		-ms-transform: translate(0);
+		-moz-transform: translate(0);
 	}
 	.footer .contact{
 		display: block;
