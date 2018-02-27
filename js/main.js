@@ -23,7 +23,7 @@ new Vue({
 		leave() {
 			this.xDeg = 0
 			this.yDeg = 0
-			this.currentImg.style.transform = "rotateX("+this.yDeg+"deg) rotateY("+this.xDeg+"deg)"
+			this.currentImg.style.transform = "rotate(0)"
 			this.currentImg = null
 		},
 		move(e) {
